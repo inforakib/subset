@@ -1,0 +1,45 @@
+// start the name of ALLAH
+// EDIT FUN FUN CODE
+//bitmask all posible sumset
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define endl "\n"
+#define yes cout<<"Yes"<<endl
+#define no cout<<"No"<<endl
+#define yess cout<<"YES"<<endl
+#define noo cout<<"NO"<<endl
+const  ll mod=1e9+7;
+int32_t main()
+{
+ios_base::sync_with_stdio(0);
+cin.tie(0);
+ll t=1;
+
+//cin>>t;
+
+while(t--)
+{
+int n;cin>>n;
+int ar[n];
+for(int i=0;i<n;i++)
+{
+    cin>>ar[i];
+
+}
+for(int mask=0;mask<(1<<n);mask++)
+{
+    for(int i=0;i<n;i++)
+    {
+        if(mask&(1<<i))
+        {
+            cout<<ar[i]<<" ";
+        }
+    }
+    cout<<endl;
+}
+
+}
+
+
+}
